@@ -24,7 +24,11 @@
             flex-basis: 500px;
             overflow-y: scroll;
         }
-
+        @media (max-width: 1240px) {
+                .ul {
+                    display: none;
+                }
+            }
         #map {
             flex-grow: 1;
         }
@@ -72,7 +76,7 @@
     </main>
     <script>
         mapboxgl.accessToken =
-        'pk.eyJ1IjoibmxlcnR2IiwiYSI6ImNrdmJ2eHk1MzA0YjQydm1scnZsM2YxOHYifQ.zJWqyRrfaZOoDTzUN5R66Q';
+            'pk.eyJ1IjoibmxlcnR2IiwiYSI6ImNrdmJ2eHk1MzA0YjQydm1scnZsM2YxOHYifQ.zJWqyRrfaZOoDTzUN5R66Q';
         let map = new mapboxgl.Map({
             container: 'map', // container ID
             style: 'mapbox://styles/nlertv/ckvcugq5r3oid14mrezzlzo4d', // style URL
